@@ -29,7 +29,7 @@ import fsp from 'fs/promises'
 const result= await createFile('fileName.txt','text')
 
 async function readFile(fileName,content){
-    const file = await fsp.readFile(fileName,'utf-8')
+    let file = await fsp.readFile(fileName,'utf-8')
    if(file){
     file=== content
    }
